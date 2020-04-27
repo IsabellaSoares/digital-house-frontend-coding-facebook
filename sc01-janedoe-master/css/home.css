@@ -1,0 +1,16 @@
+.img-container {
+  background-color: transparent;
+  height: 500px;
+}
+
+.music-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.music-container ol li a {
+  color: #F9A826;
+  font-weight: 700;
+  text-decoration: none;
+}
