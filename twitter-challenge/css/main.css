@@ -87,7 +87,7 @@ button {
   width: 100%;
 }
 
-.timeline-container header {
+.timeline-container header, .trends-container header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -103,11 +103,11 @@ button {
   border-bottom: #f3f3f3 solid 12px;
 }
 
-.tweet-no-picture, .tweet-with-picture {  
+.tweet-content {  
   border-bottom: #f3f3f3 solid 0.1em;
 }
 
-.tweet-area, .tweet-no-picture, .tweet-with-picture {  
+.tweet-area, .tweet-content {  
   display: flex;
 }
 
@@ -118,7 +118,7 @@ button {
 }
 
 .user-area i {
-  margin-top: 3vh;
+  margin-top: 6px;
 }
 
 .message-area {  
@@ -127,7 +127,7 @@ button {
 
 .message-area textarea {
   border: none;
-  padding: 3vh 0;
+  padding: 6px 0;
   width: 100%;
 }
 
@@ -186,10 +186,86 @@ button {
 }
 
 .image-container {
-  margin-bottom: 5vh;
+  margin-bottom: 10px;
   width: 90%;
 }
 
 .image-container img {
   border-radius: 10px;
+}
+
+.search-box {
+  background-color: #e3e3e3;
+  border-radius: 20px;
+  color: #a3a3a3;
+  font-size: 1em;
+  margin-bottom: 20px;
+  padding: 0.5em 1em;
+  width: 100%;
+}
+
+.search-box input {
+  background-color: transparent;
+  border: none;
+  width: 90%;
+}
+
+.trends-container {
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  padding: 10px 0px;
+}
+
+.trends-container header {
+  padding-top: 0;
+}
+
+.trends-container h3 {
+  margin: 0;
+}
+
+.trend {
+  border-top: #c3c3c3 solid 1px;
+  font-size: 0.9em;
+  padding: 10px 12px;
+}
+
+.trend p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.trend p:nth-child(2) {
+  color: black;
+  font-weight: 500;
+}
+
+.trend p {
+  color: #a3a3a3;
+}
+
+.trend-image {
+  border: #c3c3c3 solid 1px;
+  border-radius: 8px;
+  display: flex;
+  margin-top: 8px;  
+}
+
+.trend-image-text {
+  padding: 4px 6px;
+  width: 65%;
+}
+
+.trend-image-picture {
+  width: 35%;
+}
+
+.trend-image-picture img {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.trend-image-text p:nth-child(2) {
+  color: black;
+  font-weight: normal;
 }
