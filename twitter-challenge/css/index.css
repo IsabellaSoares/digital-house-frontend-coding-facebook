@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Segoe UI";
+}
+
+main {
+  display: flex;
+}
+
+footer {
+  background-color: #2AA9E0;
+  bottom: 0;
+  height: 0.7rem;
+  position: fixed;
+  width: 100%;
+}
+
+.selected-icon, a:hover {
+  color: #2AA9E0;
+}
+
+button {
+  color: white;
+  background-color: #2AA9E0;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 5px 7px 5px -5px rgba(0,0,0,0.2);
+  font-size: 1em;
+  font-weight: 500;
+  margin-top: 1em;
+  padding: 0.5em 0;
+  width: 100%;
+}
+
