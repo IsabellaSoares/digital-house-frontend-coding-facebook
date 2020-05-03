@@ -8,11 +8,10 @@ html, body {
 
 main {
   display: flex;
-  position: relative;
-  min-height: 100vh;
 }
 
-section {
+.menu,
+.trends {
   padding: 1em 1.5em;
 }
 
@@ -20,7 +19,7 @@ section {
   width: 20%;
 }
 
-.timeline {
+.timeline-container {
   border-left: #c3c3c3 solid 1px;
   border-right: #c3c3c3 solid 1px;
   width: 50%;
@@ -34,7 +33,7 @@ footer {
   background-color: #2AA9E0;
   bottom: 0;
   height: 0.7rem;
-  position: absolute;
+  position: fixed;
   width: 100%;
 }
 
@@ -75,7 +74,7 @@ a i {
   text-align: center;
 }
 
-.menu button {
+button {
   color: white;
   background-color: #2AA9E0;
   border: none;
@@ -86,4 +85,111 @@ a i {
   margin-top: 1em;
   padding: 0.5em 0;
   width: 100%;
+}
+
+.timeline-container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em;
+  border-bottom: #f3f3f3 solid 0.1em;
+}
+
+.timeline-container h3 {
+  margin: 0;
+}
+
+.tweet-area {
+  border-bottom: #f3f3f3 solid 12px;
+}
+
+.tweet-no-picture, .tweet-with-picture {  
+  border-bottom: #f3f3f3 solid 0.1em;
+}
+
+.tweet-area, .tweet-no-picture, .tweet-with-picture {  
+  display: flex;
+}
+
+.user-area {
+  font-size: 2em;
+  text-align: center;
+  width: 10%;
+}
+
+.user-area i {
+  margin-top: 3vh;
+}
+
+.message-area {  
+  width: 90%;
+}
+
+.message-area textarea {
+  border: none;
+  padding: 3vh 0;
+  width: 100%;
+}
+
+.message-area .btn-group {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.message-area .btn-group p {
+  color: #2AA9E0;
+  font-size: 1.1em;
+  margin: 0.5em 0;
+}
+
+.message-area .btn-group p i {
+  margin-right: 2vh;
+}
+
+.message-area .btn-group button {
+  box-shadow: none;
+  height: 30px;
+  margin-right: 1em;
+  margin-top: 0;
+  padding: 0;
+  width: 12%;
+}
+
+.timeline .btn-group {
+  margin-bottom: 5vh;
+  margin-right: 100px;
+}
+
+.timeline p:nth-child(2) {
+  font-size: 0.9em;
+}
+
+.timeline p a {
+  color: #2AA9E0;
+}
+
+.user-name {
+  align-items: center;
+  color: #c3c3c3;
+  display: flex;
+}
+
+.user-name strong {
+  color: black;
+  margin-right: 8px;
+}
+
+.user-name i {
+  font-size: 0.1em;
+  margin: 0 8px;
+}
+
+.image-container {
+  margin-bottom: 5vh;
+  width: 90%;
+}
+
+.image-container img {
+  border-radius: 10px;
 }
