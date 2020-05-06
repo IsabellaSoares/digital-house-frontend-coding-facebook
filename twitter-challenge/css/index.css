@@ -43,3 +43,7 @@ button {
   display: flex;
   margin-left: 20%;
 }
+
+.trends-responsive {
+  display: none;
+}
