@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html, body, main {
+  height: 100%;
+}
+
 html, body {
   font-family: "Segoe UI";
 }
@@ -35,3 +39,7 @@ button {
   width: 100%;
 }
 
+.container {
+  display: flex;
+  margin-left: 20%;
+}
