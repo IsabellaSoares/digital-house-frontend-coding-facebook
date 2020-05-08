@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+main {
+	height: 100%;
+}
+
+html,
+body {
+	font-family: "Segoe UI";
+}
+
+#navbarSupportedContent {
+	justify-content: flex-end;
+}
+
+.layoutSidenav {
+	display: flex;
+}
+
+.layoutSidenav .layoutSidenav_content {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-width: 0;
+	flex-grow: 1;
+	min-height: calc(100vh - 56px);
+	margin-left: -225px;
+}
+
+.layoutSidenav .layoutSidenav_content {
+	padding-left: 225px;
+	top: 22px;
+}
